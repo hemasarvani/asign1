@@ -1,0 +1,22 @@
+﻿@page "/Counter"
+
+<PageTitle>Let's Count</PageTitle>
+
+<h1>How many restaurants have you visited this month ?</h1>
+<h6>Fun Fact !</h6> <br>
+<p>Restaurant is a French term- "Restaurant" was once used to describe the rich bouillons served at taverns and public houses in France,
+ which were meant to restore the spirits and relieve ailments. <br>Ever since then, it has become a catch-all term to refer to any establishment that prepares food and serves it to customers.<br>
+</p>
+
+<h4 role="status">Current count: @currentCount</h4>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click Here</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
