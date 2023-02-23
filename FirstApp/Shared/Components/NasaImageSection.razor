@@ -1,0 +1,17 @@
+<img src="@imgUrl" alt="Nasa APOD" />
+<p><a href="@hdUrl">Click here to view HD Image</a></p>
+<p>Copyrights of this image are reserved by :@copyright</p>
+
+@code{
+
+ [Parameter]
+    public string imgUrl {get;set;}
+
+     [Parameter]
+    public string hdUrl {get;set;}
+
+     [Parameter]
+    public string copyright {get;set;}
+
+
+}
