@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTmFzYUFwb2QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/workspace/asign1/FirstApp/Pages/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [/workspace/asign1/FirstApp/Pages/ToDo.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVG9Eby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

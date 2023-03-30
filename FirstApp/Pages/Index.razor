@@ -1,4 +1,6 @@
 ﻿@page "/"
+@attribute [AllowAnonymous]
+@inject CustomAuthenticationStateProvider _authenticationStateProvider
 
 <PageTitle>Index</PageTitle>
 
@@ -6,6 +8,21 @@
 Hello foodies! Welcome to THE FOOD POST
 Here we share our adoration for good food with you! Whether you're a foodie or only searching for another café to attempt, we take care of you. Our group of experienced food pundits are devoted to finding the best feasting encounters and bringing you legit, top to bottom surveys of the best in class in the food world. We accept that great food is intended to be relished and shared, so come go along with us on our culinary excursion and find the flavorful universe of food.Our aim is to provide valuable insights and recommendations to help you make informed decisions about where to eat.
 <p><img src="https://photoswithphones.com/wp-content/uploads/2018/10/Beginners-Guide-to-Smartphone-Photography-feature.jpg"alt="Food" width="880" height="380"><br></p>
+
+<button class="btn btn-primary" @onclick="RegularUserClicked">Regular User Login </button>
+<button class="btn btn-secondary" @onclick="AdminUserClicked">Admin User Login </button>
+
+@code{
+    private void RegularUserClicked(){
+        _authenticationStateProvider.RegularFakedSignIn();
+    }
+
+    private void AdminUserClicked(){
+        _authenticationStateProvider.AdminFakedSignIn();
+    }
+}
+
+
 
 <footer>
 Copyrights reserved by Lakshmi Hema Sarvani Gadamsetty.<br>
